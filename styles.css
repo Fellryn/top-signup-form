@@ -72,14 +72,60 @@
 }
 
 .content {
-    border: 1px black solid;
     flex-grow: 1;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 50px;
+    height: 60%;
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.144);
 }
 
 .content h2:nth-child(3) {
     margin-top: 60px;
 }
+
+.form-container {
+    
+}
+
+.main-form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form-cell {
+    padding-right: 2rem;
+}
+
+.form-cell:nth-child(n + 3) {
+    padding-top: 1.5rem;
+}
+
+.form-cell label,
+.form-cell input {
+    display: block;
+}
+
+.form-cell input {
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    border: 1px rgb(201, 200, 200) solid;
+    appearance: none;
+}
+
+.form-cell input:focus {
+    outline: 2px solid rgb(135, 186, 253);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.459);
+}
+
+.form-cell input:user-invalid {
+    outline: 2px solid rgb(252, 95, 95)
+}
+
+.form-cell label {
+    font-size: 14px;
+}
+
