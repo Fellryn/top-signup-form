@@ -129,3 +129,22 @@
     font-size: 14px;
 }
 
+.content-action {
+    padding: 50px;
+}
+
+.create-account {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 36px;
+    font-size: 18px;
+    background-color: #596D48;
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.login-button {
+    font-weight: bold;
+    color: #596D48;
+}
