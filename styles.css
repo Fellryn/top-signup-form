@@ -11,7 +11,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 .container {
@@ -31,7 +30,7 @@
 
 .logo {
     width: 35%;
-    background-image:url("/images/splash-image.jpg");
+    background-image:url("images/splash-image.jpg");
     background-size: 159%;
     background-position: -75px;
     position: relative;
