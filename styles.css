@@ -7,9 +7,79 @@
     font-display: swap;
 }
 
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 .container {
-    width: 1000px;
-    height: 800px;
+    width: 1200px;
+    height: 1000px;
     border: 1px black solid;
     margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.splash-image {
+    height: 1000px;
+    transform: translateX(-10%);
+    clip-path: inset(0 20% 0 0)
+}
+
+.logo {
+    width: 35%;
+    background-image:url("/images/splash-image.jpg");
+    background-size: 159%;
+    background-position: -75px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.logo-backdrop {
+    background-color: #00000080;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-backdrop img {
+    height: 100px;
+    padding: 10px;
+}
+
+.logo-backdrop h1 {
+    color: white;
+    font-family: "Norse", sans-serif, system-ui;
+    font-size: 5rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.image-credit {
+    position: absolute;
+    bottom: 10px;
+    left: 75px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.image-credit a {
+    color: white;
+}
+
+.content {
+    border: 1px black solid;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.content h2:nth-child(3) {
+    margin-top: 60px;
 }
